@@ -67,7 +67,7 @@ namespace bitScry.Controllers.Projects
             BarDataset dataset = new BarDataset()
             {
                 Label = "# of Votes",
-                Data = new List<double>() { 12, 19, 3, 5, 2, 3 },
+                Data = new List<double?>() { 12, 19, 3, 5, 2, 3 },
                 BackgroundColor = new List<ChartColor>
                 {
                     ChartColor.FromRgba(255, 99, 132, 0.2),
@@ -157,7 +157,7 @@ namespace bitScry.Controllers.Projects
             LineDataset dataset = new LineDataset()
             {
                 Label = "My First dataset",
-                Data = new List<double>() { 65, 59, 80, 81, 56, 55, 40 },
+                Data = new List<double?>() { 65, 59, 80, 81, 56, 55, 40 },
                 Fill = "false",
                 LineTension = 0.1,
                 BackgroundColor = ChartColor.FromRgba(75, 192, 192, 0.4),
@@ -293,7 +293,7 @@ namespace bitScry.Controllers.Projects
                 PointBorderColor = new List<ChartColor>() { ChartColor.FromHexString("#fff") },
                 PointHoverBackgroundColor = new List<ChartColor>() { ChartColor.FromHexString("#fff") },
                 PointHoverBorderColor = new List<ChartColor>() { ChartColor.FromRgba(179,181,198,1) },
-                Data = new List<double>() { 65, 59, 80, 81, 56, 55, 40 }
+                Data = new List<double?>() { 65, 59, 80, 81, 56, 55, 40 }
             };
 
             RadarDataset dataset2 = new RadarDataset()
@@ -305,7 +305,7 @@ namespace bitScry.Controllers.Projects
                 PointBorderColor = new List<ChartColor>() { ChartColor.FromHexString("#fff") },
                 PointHoverBackgroundColor = new List<ChartColor>() { ChartColor.FromHexString("#fff") },
                 PointHoverBorderColor = new List<ChartColor>() { ChartColor.FromRgba(255,99,132,1) },
-                Data = new List<double>() { 28, 48, 40, 19, 96, 27, 100 }
+                Data = new List<double?>() { 28, 48, 40, 19, 96, 27, 100 }
             };
 
             data.Datasets = new List<Dataset>();
@@ -335,7 +335,7 @@ namespace bitScry.Controllers.Projects
                     ChartColor.FromHexString("#E7E9ED"),
                     ChartColor.FromHexString("#36A2EB")
                 },
-                Data = new List<double>() { 11, 16, 7, 3, 14 }
+                Data = new List<double?>() { 11, 16, 7, 3, 14 }
             };
 
             data.Datasets = new List<Dataset>();
@@ -367,7 +367,7 @@ namespace bitScry.Controllers.Projects
                     ChartColor.FromHexString("#36A2EB"),
                     ChartColor.FromHexString("#FFCE56")
                 },
-                Data = new List<double>() { 300, 50, 100 }
+                Data = new List<double?>() { 300, 50, 100 }
             };
 
             data.Datasets = new List<Dataset>();
